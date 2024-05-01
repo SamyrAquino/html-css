@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#13F2F2,#038C8C 70%);
+}
+main{
+    background-color: white;
+    border-radius: 15px; /*cantos arredondados(pode ter quatro valores*/
+    box-shadow:5px 5px 15px #027272; /* adicione sombra a diferentes elementos*/
+    width: 600px;
+    padding: 10px;/*Cria espaço extra dentro de um elemento, que é o espaço de seu conteúdo até a borda (pode ter quatro valores)*/
+    margin: auto; /*define as margens de um elemento*/
+}
+h1{
+    text-align: center;
+    color: #0B1726;
+    text-shadow: 2px 2px 5px #0B1726;/*adiciona sombra ao texto*/
+}
+h2{
+    color: #111D40;
+}
+p{
+    text-align: justify;
+}

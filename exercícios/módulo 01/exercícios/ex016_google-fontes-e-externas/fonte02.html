@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'minha fonte';
+            src: url(fontes/Khodijah\ Free.otf) format('opentype'), url(fontes/Khodijah\ Free.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*Tipos de format
+            -Opentype(otf)
+            -truetype(ttf) 
+            -embedded-opentype 
+            -truetype-aat(Apple Advanced Tipography)
+            -svg */
+         }
+            body{
+                text-align: justify;
+                font:normal normal 1em Arial, sans-serif;
+            }
+            h1{
+                font-family: 'minha fonte', serif;
+                font-size: 3em;
+                font-weight: normal;
+            }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente voluptatum harum officia, voluptates earum dignissimos, placeat consectetur reiciendis reprehenderit explicabo non assumenda! Quidem aut pariatur qui optio quia iusto.</p>
+    
+</body>
+</html>

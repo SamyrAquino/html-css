@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+<h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png"type="image/png"> <!--50 px a mais por conta da barra de rolagem-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem g">
+    </picture>
+<h1>Áudios</h1>
+    <p>Vamos carregar um áudio, ouve esse rock cabuloso aí:</p>
+    <audio preload="metadata" autoplay controls loop>
+        <!--"metadata" é o mais aconselhável, ele vai carregar somente as informações necessárias do arquivo. O "auto" carrega o arquivo inteiro, e quando ele é grande pode causar uma certa lentidão-->
+        <source src="audio/tropical-thunder.mp3" type="audio/mpeg">
+        <source src="audio/tropical-thunder.ogg" type="audio/ogg">
+        <source src="audio/tropical-thunder.wav" type="audio/wav"> <!--wav é muito pesado, evite usar. mp3 e ogg já está ótimo-->
+        <p>Seu navegador não suporta o áudio, <a href="audio/tropical-thunder.mp3" download="tropical-thunder.mp3" type="audio/mpeg"> Clique aqui para baixar</a></p>
+    </audio>
+<h1>Vídeos</h1>
+    <p>Esse é um vídeo hospedado no meu próprio servidor</p>
+    <video preload="metadata" width="500" poster="videos/thumb.png" controls autoplay muted> <!--o chrome só inicia o vídeo automaticamente se adicionar o muted-->
+    <source src="videos/meu-video.webm" type="video/webm">
+    <source src="videos/meu-video.mp4" type="video/mp4">
+    <source src="videos/meu-video.m4v" type="video/mp4">
+    <source src="videos/meu-video.ogv" type="video/ogg">
+    <p>Seu navegador não é compatível com o vídeo, <a href="videos/meu-video.mp4" download="meuvideo.mp4" type="video/mp4">baixe ele aqui</a></p> 
+    </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=4USGA_dbaBFRbGPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do vimeo</h1> <!--videos privados se recomenda que use o vimeo-->
+    <iframe src="https://player.vimeo.com/video/270637523?h=fd990c20a9&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

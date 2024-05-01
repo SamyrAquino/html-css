@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+       /* # = Id
+          . = class
+          : = pseudo-class
+          :: = pseudo-element
+          > = children  
+         */
+         ::selection{  /*personaliza a seleção do texto  */
+            background-color: greenyellow;
+         }
+        ::marker{  /*Personaliza os marcadores da lista  */
+            color: brown;
+         }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: darkgreen;
+            text-decoration: none;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            text-decoration: underline;
+            background-color: brown;
+            color: white;
+        }
+        a:active{   /*quando clica no texto  */
+            color: black;
+            background-color: aqua;
+        }
+        a::after{  /*depois do texto  */
+            content: ' [link]';
+        }
+        .principal::before{   /*antes do texto  */
+            content: '[link] ';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <li><a href="https://open.spotify.com/" target="_blank" rel="external">Acesse o Spotify</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external" class="principal">Acesse o Youtube</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="external">Acesse o W3schools</a></li>
+    </ul>
+
+    
+</body>
+</html>
