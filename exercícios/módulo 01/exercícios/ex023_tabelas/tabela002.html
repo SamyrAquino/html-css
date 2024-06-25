@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -24,6 +25,11 @@
         }
         thead, tfoot{
             background-color: rgb(94, 94, 94);
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:rgb(94, 94, 94); ;
         }
          tbody > tr:nth-child(2n){  /*even é par, odd é ímpar */
             background-color: lightgray;
