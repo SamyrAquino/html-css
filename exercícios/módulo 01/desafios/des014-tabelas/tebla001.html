@@ -11,10 +11,18 @@
         table{
             border-collapse: collapse;
         }
+        thead{
+            background-color: grey;
+            color: white;
+        }
         th, td{
-            border: 1px solid black;
+            border: 2px solid black;
             padding: 10px;
             width: 100px;
+        }
+        .cinza{
+            background-color: grey;
+            color: white;
         }
     </style>
 </head>
@@ -34,7 +42,7 @@
         </thead>
         <tbody>
             <tr>
-                <th>Exatas</th>
+                <th rowspan="4">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -58,12 +66,12 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <th>Média de exatas</th>
+            <tr class="cinza">
+                <th colspan="4">Média de exatas</th>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Humanas</th>
+                <th rowspan="2">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -75,8 +83,8 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <th>Média de humanas</th>
+            <tr class="cinza">
+                <th colspan="4">Média de humanas</th>
                 <td>0.0</td>
             </tr>
 
