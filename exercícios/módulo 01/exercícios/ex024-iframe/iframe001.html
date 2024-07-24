@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
+
+    <!--Tamanho padrão do iframe: 300x150-->
     <h1>testando o uso de um iframe</h1>
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar</p>
-    <p>O site do <iframe src="https://www.google.com.br/" frameborder="0"> <a href="https://www.google.com.br/" > site do google</a></iframe> também é muito legal, pena que não funciona no iframe</p>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" height="400" width="400" scolling="no"></iframe> para aprender a programar</p>             <!--o scolling vai definir se o iframe vai ou não ter rolagem-->
+   <!--o frameborder vai definir se vai ou não ter borda. "0" é não e qualquer outro valor é sim. Pra definir uma borda mais personalizada, faça no css-->
+    <p>O site do <iframe src="https://www.google.com.br/" frameborder="0"> 
+        <a href="https://www.google.com.br/" > site do google</a>
+    </iframe> também é muito legal, pena que não funciona no iframe</p>
+
     <p>O meu repositório <iframe src="https://samyraquino.github.io/coffee-break/" frameborder="0"></iframe> também é bem legal</p>
 </body>
 </html>
